@@ -11,6 +11,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" type="image/png" href="images/cloud.png" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style type="text/css">
+		#fig1 { float: left; padding: 5px; }
+		#fig2 { float: left; padding: 5px; }
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -43,29 +48,20 @@
 									</header>
 
 									<hr class="major" />
-									<h2>3D cloud radiative effects</h2>
-									<p> <em>How large is the albedo bias in climate models resulting from 1D radiative transfer assumptions?</em> 
-									<p>See our pre-print here: <a href="https://doi.org/10.1002/essoar.10504531.2">https://doi.org/10.1002/essoar.10504531.2</a></p>
-										<ul>
-											<li>Because GCMs don't resolve the small spatial scales of cloud dynamics, they cannot contain 
-												information about the small-scale morphology and structure of these clouds. However, the 3D bumpy 
-												structure influences how clouds scattering light.</li>
-											<li>But how important is this effect on long time scales and large spatial scales where many individual
-												clouds are averaged together?</li>
-											<li>We are interested to first quantify this effect on regional spatial scales and seasonal timescales
-												and then incorporate it as a correction to radiative transfer codes used in GCMs.</li>
-										  </ul>
-										  <em>In collaboration with: Ignacio Lopez-Gomez and Tapio Schneider</em> 
-									</p>
-
-									<hr class="major" />
 									<h2>Stratocumulus cloud response to climate change</h2>
 									<p> <em>How will stratocumulus clouds respond dynamically to increased concentrations of atmospheric CO2?</em> 
 										<ul>
-											<li>Stratocumulus clouds are sustained through cloud-top longwave cooling that drives their unique upside-down convection.</li>
-											<li>They are prevelent only in certain regions (e.g. off the coast of California) because they exist through a delicate balance of cool ocean temperatures below and a strong temperature inversion at the top of the boundary layer created from subsiding free-tropospheric air.</li>
-											<li>Increasing CO2 concentrations will lead to weaker cloud-top cooling, increased surface temperatures and latent heat fluxes, and changing large-scale circulation and subsidence. All of these impact the dynamics of stratocumlus clouds.</li>
-                                                                                        <li>We are developing a theoretical model to explain the dissipation of stratocumulus clouds to increased CO2 seen in <a href="https://www.nature.com/articles/s41561-019-0310-1">Schneider et al. 2019</a>.</li>
+											<li>Stratocumulus clouds are sustained through cloud-top longwave cooling that drives their unique 
+												upside-down convection.</li>
+											<li>They are prevelent only in certain regions (e.g. off the coast of California) because they 
+												exist through a delicate balance of cool ocean temperatures below and a strong temperature 
+												inversion at the top of the boundary layer created from subsiding free-tropospheric air.</li>
+											<li>Increasing CO2 concentrations will lead to weaker cloud-top cooling, increased surface 
+												temperatures and latent heat fluxes, and changing large-scale circulation and subsidence. 
+												All of these impact the dynamics of stratocumlus clouds.</li>
+                                            <li>We are developing a theoretical model to explain the dissipation of stratocumulus clouds 
+												to increased CO2 seen in <a href="https://www.nature.com/articles/s41561-019-0310-1">
+													Schneider et al. 2019</a>.</li>
 										  </ul>
 										  <em>In collaboration with: Tapio Schneider</em> 
 									</p>
@@ -77,10 +73,36 @@
 										<ul>
 											<li>I am quantifying the impact of aerosol hygroscopicity using large-eddy simulations (LES)
 												with Lagrangian particle-based microphysics (superdroplets).</li>
-											<li>This research is being done using the <a href="https://github.com/igfuw/UWLCM">University of Warsaw Lagrangian Cloud Model</a>.</li>
+											<li>This research is being done using the <a href="https://github.com/igfuw/UWLCM">University of 
+												Warsaw Lagrangian Cloud Model</a>.</li>
 										  </ul>
 										  <p><iframe src="files/aerosol-cloud-interactions.pdf" height="500" width="640"></iframe></p>
 										  <em>In collaboration with: Anna Jaruga and John Seinfeld</em> 
+									</p>
+
+									<hr class="major" />
+									<h2>3D cloud radiative effects</h2>
+									<p> <em>How large is the albedo bias in climate models resulting from 1D radiative transfer assumptions?</em> 
+									<p>Read the paper here: <a href="https://doi.org/10.1175/JAS-D-21-0032.1">
+										https://doi.org/10.1175/JAS-D-21-0032.1</a></p>
+
+										<p><iframe src="files/fig-sza-bias-vert.pdf" height="400" width="320" id="fig1"></iframe>
+											
+											Fig 1. Top-of-atmosphere flux (a) and albedo (b) bias as a function of solar 
+											zenith angle for various cloud types: shallow cumulus (BOMEX and RICO), 
+											stratocumulus (DYCOMS-II RF01), deep convection (TRMM-LBA and TRMM-LBA agg.).
+										</p>
+										<p style="clear: left;"></p>
+										
+										<p><iframe src="files/fig-bias-cwp-map.pdf" height="200" width="600" id="fig2"></iframe>
+											
+											Fig 2. Zonal-mean and map of annual-mean flux bias inferred from ISCCP cloud water path. 
+											Bias is smallest over stratocumulus regions and largest over the ITCZ and storm tracks,
+											areas with deep clouds and persistent cloudiness.
+										</p>
+										<p style="clear: left;"></p>
+										
+										<em>In collaboration with: Ignacio Lopez-Gomez, Sally Zhang, and Tapio Schneider</em> 
 									</p>
 
 								</section>
@@ -107,7 +129,6 @@
 									<ul>
 										<li><a href="index.html">Homepage</a></li>
 										<li><a href="research.html">Research</a></li>
-										<li><a href="cv.html">CV</a></li>
 										<li><a href="publications.html">Publications</a></li>
 										<li><a href="outreach.html">Outreach/Leadership</a></li>
 								</nav>
@@ -128,7 +149,8 @@
 
 							<!-- Footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; Clare Singer. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+									<p class="copyright">&copy; Clare Singer. All rights reserved. Design: 
+										<a href="https://html5up.net">HTML5 UP</a>.</p>
 								</footer>
 
 						</div>
